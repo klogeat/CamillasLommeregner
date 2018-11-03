@@ -17,9 +17,42 @@
          </children></AnchorPane>
         <AnchorPane layoutY="88.0" prefHeight="312.0" prefWidth="600.0" style="-fx-background-color: white;">
             <children>
-            <Button fx:id="variansButton" layoutX="277.0" layoutY="156.0" mnemonicParsing="false" onAction="#variansPressed" text="Varians" />
-                <Button fx:id="gennemsnitButton" layoutX="107.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#gennemsnitPressed" text="Gennemsnit" />
-            <Button fx:id="myButton" layoutX="437.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#buttonPressed" text="Tredje mulighed" />
+            <AnchorPane prefHeight="312.0" prefWidth="200.0">
+               <children>
+                      <Button fx:id="gennemsnitButton" layoutX="45.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#gennemsnitPressed" prefWidth="110.0" text="Gennemsnit" />
+                  <Button fx:id="afvigelseButton" layoutX="45.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#buttonPressed" prefWidth="110.0" text="Standartafvigelse" />
+                  <Button fx:id="variansButton" layoutX="45.0" layoutY="100.0" mnemonicParsing="false" onAction="#variansPressed" prefWidth="110.0" text="Varians" />
+                  <Text layoutX="58.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Variation">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="200.0" prefHeight="312.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="myButton1" layoutX="45.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#buttonPressed" prefWidth="110.0" text="Absolut risiko" />
+                  <Button fx:id="myButton2" layoutX="45.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#buttonPressed" prefWidth="110.0" text="Relativ risiko" />
+                  <Button fx:id="myButton3" layoutX="45.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#buttonPressed" prefWidth="110.0" text="Knap" />
+                  <Text layoutX="73.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Risiko">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="400.0" prefHeight="312.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="myButton11" layoutX="45.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#buttonPressed" prefWidth="110.0" text="Odds" />
+                  <Button fx:id="myButton21" layoutX="45.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#buttonPressed" prefWidth="110.0" text="Odds ratio" />
+                  <Button fx:id="myButton31" layoutX="45.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#buttonPressed" prefWidth="110.0" text="Knap" />
+                  <Text layoutX="75.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Odds">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
             </children>
         </AnchorPane>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
