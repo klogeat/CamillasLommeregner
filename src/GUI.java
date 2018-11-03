@@ -24,7 +24,4 @@ public class GUI extends Application {
         launch(args);
     }
 
-    public static void changeScene(Parent root){
-
-    }
 }
